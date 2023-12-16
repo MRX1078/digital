@@ -48,7 +48,7 @@ const App = () => {
 
   const handleExport = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/v1/get_model/', {
+      const response = await axios.get('http://87.242.95.54:8000/api/v1/get_model/', {
         responseType: 'blob',
       });
 
