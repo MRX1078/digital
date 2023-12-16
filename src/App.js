@@ -33,7 +33,7 @@ const App = () => {
 
   const handleButtonClick = async (userId, value) => {
     try {
-      const response = await axios.post('http://your-api-url/submit', {
+      const response = await axios.post('http://87.242.95.54:8000/api/v1/get_model/', {
         id: userId,
         answer: value,
         comment: comment,
