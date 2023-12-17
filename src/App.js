@@ -112,8 +112,8 @@ const App = () => {
                 </div>
                 <p className="comment">Комментарий: {user.comment}</p>
                 <div className="button-container">
-                  <button onClick={() => handleButtonClick(user.id, 0)}>Установить 0</button>
-                  <button onClick={() => handleButtonClick(user.id, 1)}>Установить 1</button>
+                  <button onClick={() => handleButtonClick(user.id, 0)}>Неправильно</button>
+                  <button onClick={() => handleButtonClick(user.id, 1)}>Правильно</button>
                   <input
                       type="text"
                       placeholder="Введите комментарий"
