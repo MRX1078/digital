@@ -18,7 +18,7 @@ const App = () => {
       const formData = new FormData();
       formData.append('file', file);
 
-      const response = await axios.post('http://87.242.95.54:8000/api/v1/get_model/', formData, {
+      const response = await axios.post('http://89.232.170.158/api/v1/check_log/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -33,7 +33,7 @@ const App = () => {
 
   const handleButtonClick = async (userId, value) => {
     try {
-      const response = await axios.post('http://87.242.95.54:8000/api/v1/get_model/', {
+      const response = await axios.post('http://89.232.170.158/api/v1/check_log/', {
         id: userId,
         answer: value,
         comment: comment,
@@ -48,7 +48,7 @@ const App = () => {
 
   const handleExport = async () => {
     try {
-      const response = await axios.get('http://87.242.95.54:8000/api/v1/get_model/', {
+      const response = await axios.get('http://89.232.170.158/api/v1/check_log/', {
         responseType: 'blob',
       });
 
